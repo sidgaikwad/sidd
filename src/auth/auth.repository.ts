@@ -1,4 +1,4 @@
-import { DataSource, EntityRepository, Repository } from "typeorm";
+import { DataSource, Repository } from "typeorm";
 import { users } from "./auth.entity";
 import { Injectable } from "@nestjs/common";
 

@@ -1,4 +1,6 @@
 import { IsNotEmpty, IsString, Length, isNotEmpty, isString } from "class-validator"
+import { OneToMany } from "typeorm";
+import { users } from "./auth.entity";
 
 export class authdto {
     @IsNotEmpty({message: "there should be a username"})
@@ -10,7 +12,4 @@ export class authdto {
     @IsString()
     @Length(2, 255)
     email: string;
-
-
-
 }

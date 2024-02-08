@@ -23,4 +23,8 @@ export class AuthService {
     async createNewAuth(auth: authdto){
         return await this.authrepository.save(auth)
     }
+
+    async getUserId(Id: number){
+        return await this.authrepository.findOne(Id);
+    }
 }
